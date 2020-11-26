@@ -85,6 +85,9 @@ PRODUCT_PACKAGES += \
 # Via
 PRODUCT_PACKAGES += \
     Via
+#Doze
+PRODUCT_PACKAGES += \
+    CustomDoze
 
 # QKsms
 PRODUCT_PACKAGES += \
