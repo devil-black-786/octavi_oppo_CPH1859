@@ -23,6 +23,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, vendor/octavi/config/common.mk)
 IS_PHONE := true
 TARGET_GAPPS_ARCH := arm64
+OCTAVI_BUILD_TYPE=Official
+OCTAVI_DEVICE_MAINTAINER := ProNoob
 
 # Inherit from oppo CPH1861
 $(call inherit-product, device/oppo/CPH1859/device.mk)
