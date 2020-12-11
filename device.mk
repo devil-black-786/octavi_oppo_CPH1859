@@ -102,13 +102,17 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     qksms
 
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(DT_PATH)/overlay \
+    $(DT_PATH)/overlay-ancient
+
 # Removed Packages
 PRODUCT_PACKAGES += \
     RemovePackages \
     RemovePackages-1 \
     RemovePackages-2 \
     RemovePackages-3
-
 
 # HIDL
 PRODUCT_PACKAGES += \
@@ -133,7 +137,6 @@ PRODUCT_PACKAGES += \
 # Tethering
 PRODUCT_PACKAGES += \
     TetheringConfigOverlay
-
 
 # KPOC
 PRODUCT_PACKAGES += \
