@@ -168,10 +168,6 @@ PRODUCT_COPY_FILES += \
        $(LOCAL_PATH)/permissions/interfaces.xml:system/etc/permissions/interfaces.xml
 
 
-# Privapp-permissions whitelist for PhhTrebleApp
-PRODUCT_COPY_FILES += \
-       $(LOCAL_PATH)/permissions/privapp-permissions-me.phh.treble.app.xml:system/etc/permissions/privapp-permissions-me.phh.treble.app.xml
-
 # Overlay from mtk-telephony-ext
 include vendor/mediatek/hardware/telephony-ext/overlay.mk
 
