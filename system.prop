@@ -100,3 +100,5 @@ ro.charger.enable_suspend=true
 # Boot
 sys.vendor.shutdown.waittime=500
 
+# SurfaceFlinger
+debug.sf.latch_unsignaled=1
