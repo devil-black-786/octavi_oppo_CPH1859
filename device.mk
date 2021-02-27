@@ -47,9 +47,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.CPH1859
 
-# Overlays
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
-
 # Keyboard layout
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/ACCDET.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/ACCDET.kl \
@@ -104,8 +101,8 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(DT_PATH)/overlay \
-    $(DT_PATH)/overlay-ancient
+    $(LOCAL_PATH)/overlay \
+    $(LOCAL_PATH)/overlay-ancient
 
 # Removed Packages
 PRODUCT_PACKAGES += \
