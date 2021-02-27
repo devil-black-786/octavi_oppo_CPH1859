@@ -16,4 +16,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/octavi_CPH1859.mk
+    $(LOCAL_DIR)/ancient_CPH1859.mk
