@@ -92,6 +92,10 @@ on boot
     mount none /dev/null vendor/lib64/hw/keystore.mt6771.so bind
     mount none /dev/null vendor/lib64/hw/keystore.oppo6771_17065.so bind
 
+# Disable AOSP RIL if MTK RIL is up
+on property:vendor.ril.mtk=1
+    stop vendor.ril-daemon
+
 service set_zram /vendor/bin/sh /system/etc/init/set_zram.sh
     class late_start
     disabled
